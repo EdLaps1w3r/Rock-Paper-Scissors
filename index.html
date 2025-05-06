@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
 </head>
-<script src="./script.js"></script>
+<script src="./script.js" defer></script>
 <body>
+    <div id="buttons">
+        <button class="choice" onclick="playRound('rock', getComputerChoice())">Rock</button>
+        <button class="choice" onclick="playRound('paper', getComputerChoice())">Paper</button>
+        <button class="choice" onclick="playRound('scissors', getComputerChoice())">Scissors</button>
+    </div>
+
+    <div>
+        <h1 id="winMessage"> </h1>
+        <p id="humanScore">Your Score:0</p>
+        <p id="computerScore">Computer Score:0</p>
+    </div>
 </body>
 </html>
